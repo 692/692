@@ -1,78 +1,48 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" 
-		name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-		    <script>
-        if (location.href.indexOf("http://") == 0) {
-            location = location.href.replace("http:", "https:", 1);
-        }
-    </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="description" content="{{ site.description }}"/>
         <meta name="viewport" content="width=device-width">
+        <link href="/favicon.png" rel="icon">
         <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 
         <!-- syntax highlighting CSS -->
-        <script src="marked.js"></script>
-    <link rel="stylesheet" href="github-markdown.css">
-      
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
     </head>
     <body>
 
-        <div id="content" class="markdown-body">   
-		   <div class="header">
-            <a class="extra" href="/">Home></a>
-            <a class="extra" href="/">Wiki></a>
-            <a class="extra" href="https://github.com/692/">Github></a>
-            <a class="extra" href="/about.html">About></a>
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a class="extra" href="/">Home</a>
+            <a class="extra" href="http://wiki.tankywoo.com/">Wiki</a>
+            <a class="extra" href="https://github.com/tankywoo">Github</a>
+            <a class="extra" href="/about.html">About</a>
             <a class="extra" href="/feed.xml">RSS</a>
           </div>
+
           {{ content }}
 
           <div class="footer">
             <div class="contact">
               <p>
-              <<a href="/">Back</a>>
+              Tanky Woo <<a href="mailto:me@tankywoo.com">me@tankywoo.com</a>>
               </p>
             </div>
           </div>
         </div>
 
-    <script>
-    (function() {
-        if (location.href.indexOf('https:') < 0) {
-            return;
-        }
-        if (window.XMLHttpRequest) {
-            var request = new XMLHttpRequest();
-        } else {
-            var request = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        request.onreadystatechange = render;
-        var path = "/index.html";
-        if (location.href.indexOf('?') > 0) {
-            path = location.href.substring(location.href.indexOf('?')+1);
-        }
-        request.open('GET', path, true);
-        request.send();
-        function render() {
-            if (request.readyState == 4) {
-                if (request.status >= 200 && request.status < 400){
-                    var firstline = request.responseText.split("\n")[0];
-                    if (firstline.indexOf('#') == 0) {
-                      document.title += ' ' + firstline.replace(/#*/, '').replace(/\s+/, '');
-                    } else {
-                      document.title += '.';
-                    }
-                    document.getElementById("content").innerHTML = marked(request.responseText);
-                } else {
-                    location = 'https://github.com/692/692.github.io';
-                }
-            }
-        }
-    })();
-    </script>
+<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f8eefe3f13b327ada7a7406d2af3232' type='text/javascript'%3E%3C/script%3E"));
+</script>
 
 
     </body>
