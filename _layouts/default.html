@@ -39,10 +39,40 @@
           </div>
         </div>
 
-<script type="text/javascript">
-	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f8eefe3f13b327ada7a7406d2af3232' type='text/javascript'%3E%3C/script%3E"));
-</script>
+    <script>
+    (function() {
+        if (location.href.indexOf('https:') < 0) {
+            return;
+        }
+        if (window.XMLHttpRequest) {
+            var request = new XMLHttpRequest();
+        } else {
+            var request = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        request.onreadystatechange = render;
+        var path = "/index.html";
+        if (location.href.indexOf('?') > 0) {
+            path = location.href.substring(location.href.indexOf('?')+1);
+        }
+        request.open('GET', path, true);
+        request.send();
+        function render() {
+            if (request.readyState == 4) {
+                if (request.status >= 200 && request.status < 400){
+                    var firstline = request.responseText.split("\n")[0];
+                    if (firstline.indexOf('#') == 0) {
+                      document.title += ' ' + firstline.replace(/#*/, '').replace(/\s+/, '');
+                    } else {
+                      document.title += '.';
+                    }
+                    document.getElementById("content").innerHTML = marked(request.responseText);
+                } else {
+                    location = 'https://github.com/692/692.github.io';
+                }
+            }
+        }
+    })();
+    </script>
 
 
     </body>
