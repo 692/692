@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/692/692</id><title>RSS feed of 692's 692</title><updated>2024-10-12T18:59:30.221840+00:00</updated><link href="https://github.com/692/692"/><link href="https://raw.githubusercontent.com/692/692/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/692/692/issues/2</id><title>测试</title><updated>2024-10-12T18:59:30.520118+00:00</updated><content type="html"><![CDATA[<p>测试测试测试测试测试测试</p>
-]]></content><link href="https://github.com/692/692/issues/2"/><category term="bug"/><published>2024-10-12T18:41:41+00:00</published></entry><entry><id>https://github.com/692/692/issues/1</id><title>这个博客开源了</title><updated>2024-10-12T18:59:30.693225+00:00</updated><content type="html"><![CDATA[<h1><a href="https://github.com/yihong0618/gitblog/issues/177">这个博客开源了</a></h1>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/692/692</id><title>RSS feed of 692's 692</title><updated>2024-10-12T19:06:09.616767+00:00</updated><link href="https://github.com/692/692"/><link href="https://raw.githubusercontent.com/692/692/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/692/692/issues/2</id><title>about</title><updated>2024-10-12T19:06:09.932641+00:00</updated><content type="html"><![CDATA[<p>测试测试测试测试测试测试</p>
+]]></content><link href="https://github.com/692/692/issues/2"/><category term="about"/><published>2024-10-12T18:41:41+00:00</published></entry><entry><id>https://github.com/692/692/issues/1</id><title>这个博客开源了</title><updated>2024-10-12T19:06:10.082547+00:00</updated><content type="html"><![CDATA[<h1><a href="https://github.com/yihong0618/gitblog/issues/177">这个博客开源了</a></h1>
 <p>因为一篇去年非常触动我的文章--<a href="https://laike9m.com/blog/people-die-but-long-live-github,122/">People Die, but Long Live GitHub</a>
 我决定不再用纸笔写日记，进而全部转到 GitHub 上。如果你看到这个，这个其实不是那些大牛的技术博客，而是单纯的碎碎念偶尔认真的记录自己而已。</p>
 <hr />
@@ -349,4 +349,4 @@ GitHub Actions / .github/workflows/generate_readme.yml Invalid workflow file You
 <p>谢谢了。</p>
 </blockquote>
 <p>好的抱歉回复晚了，想着下周看下的</p>
-]]></content><link href="https://github.com/692/692/issues/1"/><category term="documentation"/><published>2024-10-12T16:41:56+00:00</published></entry></feed>
+]]></content><link href="https://github.com/692/692/issues/1"/><category term="博客"/><published>2024-10-12T16:41:56+00:00</published></entry></feed>

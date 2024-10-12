@@ -4,9 +4,9 @@ My personal blog([About Me](https://github.com/692/692/issues/01)) using issues 
 [RSS Feed](https://raw.githubusercontent.com/692/692/master/feed.xml)
 
 ## 最近更新
-- [测试](https://github.com/692/692/issues/2)--2024-10-12
+- [about](https://github.com/692/692/issues/2)--2024-10-12
 - [这个博客开源了](https://github.com/692/692/issues/1)--2024-10-12
-## documentation
+## 博客
 - [这个博客开源了](https://github.com/692/692/issues/1)--2024-10-12
-## bug
-- [测试](https://github.com/692/692/issues/2)--2024-10-12
+## about
+- [about](https://github.com/692/692/issues/2)--2024-10-12
