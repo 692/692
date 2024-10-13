@@ -6,6 +6,7 @@ My personal blog([About Me](https://github.com/692/692/issues/2)) using issues a
 ## 置顶文章
 - [图片测试](https://github.com/692/692/issues/3)--2024-10-12
 ## 最近更新
+- [月份英文缩写](https://github.com/692/692/issues/5)--2024-10-13
 - [测试标题](https://github.com/692/692/issues/4)--2024-10-13
 - [图片测试](https://github.com/692/692/issues/3)--2024-10-12
 - [About](https://github.com/692/692/issues/2)--2024-10-12
@@ -16,3 +17,5 @@ My personal blog([About Me](https://github.com/692/692/issues/2)) using issues a
 - [测试标题](https://github.com/692/692/issues/4)--2024-10-13
 ## TOP
 - [图片测试](https://github.com/692/692/issues/3)--2024-10-12
+## 生活
+- [月份英文缩写](https://github.com/692/692/issues/5)--2024-10-13
