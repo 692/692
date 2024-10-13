@@ -7,7 +7,7 @@ My personal blog([About Me](https://github.com/692/692/issues/01)) using issues 
 - [图片测试](https://github.com/692/692/issues/3)--2024-10-12
 ## 最近更新
 - [图片测试](https://github.com/692/692/issues/3)--2024-10-12
-- [about](https://github.com/692/692/issues/2)--2024-10-12
+- [About](https://github.com/692/692/issues/2)--2024-10-12
 - [这个博客开源了](https://github.com/692/692/issues/1)--2024-10-12
 ## 博客
 - [这个博客开源了](https://github.com/692/692/issues/1)--2024-10-12
