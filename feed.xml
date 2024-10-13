@@ -1,27 +1,275 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/692/692</id><title>RSS feed of 692's 692</title><updated>2024-10-13T09:40:17.471756+00:00</updated><link href="https://github.com/692/692"/><link href="https://raw.githubusercontent.com/692/692/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/692/692/issues/5</id><title>月份英文缩写</title><updated>2024-10-13T09:40:17.754214+00:00</updated><content type="html"><![CDATA[<p>月份的縮寫在日常生活中十分常見，同學們記得多少個呢？一起來看看吧！</p>
-<p>一月 January = Jan</p>
-<p>二月 February = Feb</p>
-<p>三月 March = Mar</p>
-<p>四月 April = Apr</p>
-<p>五月 May = May</p>
-<p>六月 June = Jun</p>
-<p>七月 July = Jul</p>
-<p>八月 August = Aug</p>
-<p>九月 September = Sep / Sept</p>
-<p>十月 October = Oct</p>
-<p>十一月 November = Nov</p>
-<p>十二月 December = Dec</p>
-]]></content><link href="https://github.com/692/692/issues/5"/><category term="生活"/><published>2024-10-13T09:39:45+00:00</published></entry><entry><id>https://github.com/692/692/issues/4</id><title>测试标题</title><updated>2024-10-13T09:40:17.918556+00:00</updated><content type="html"><![CDATA[<p>测试内容内容内容测试内容测试内容测试内容测试内容<img src="https://github.com/user-attachments/assets/010dcd96-58f6-46cc-9322-e81bfc2dfe5a" alt="Screenshot_20240925_192332_org_schabi_newpipe_MainActivity.jpg" /></p>
-]]></content><link href="https://github.com/692/692/issues/4"/><category term="IGNORE"/><published>2024-10-13T04:17:56+00:00</published></entry><entry><id>https://github.com/692/692/issues/3</id><title>图片测试</title><updated>2024-10-13T09:40:18.038019+00:00</updated><content type="html"><![CDATA[<p>图</p>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/692/692</id><title>RSS feed of 692's 692</title><updated>2024-10-13T11:30:38.576541+00:00</updated><link href="https://github.com/692/692"/><link href="https://raw.githubusercontent.com/692/692/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/692/692/issues/6</id><title>Gmeek 超轻量级个人博客，All in Github</title><updated>2024-10-13T11:30:38.862833+00:00</updated><content type="html"><![CDATA[<h1>Gmeek快速上手</h1>
+<p><a href="https://blog.meekdai.com/" title="首页"></a><a href="https://github.com/Meekdai/meekdai.github.io/issues/39" title="Issue"></a><a href="https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html" title="切换主题"></a></p>
+<p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a> 一个博客框架，超轻量级个人博客模板，完全基于<code>Github Pages</code> 、 <code>Github Issues</code> 和 <code>Github Actions</code>，可以称作<code>All in Github</code>。不需要本地部署，从搭建到写作，只需要18秒，2步搭建好博客，第3步就是写作。</p>
+<h2>一、安装</h2>
+<p>Important</p>
+<p>安装及其简单，但是也要认真看下面的步骤，一步一步来。</p>
+<ol>
+<li>
+<p>【创建仓库】点击<a href="https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai">通过模板创建仓库</a>，建议仓库名称为<code>XXX.github.io</code>，其中<code>XXX</code>为你的github用户名。</p>
+</li>
+<li>
+<p>【启用Pages】在仓库的设置<code>Settings</code>中<code>Pages-&gt;Build and deployment-&gt;Source</code>下面选择<code>Github Actions</code>。</p>
+</li>
+<li>
+<p>【开始写作】打开一篇issue，开始写作，并且<strong>必须</strong>添加一个<code>标签Label</code>（至少添加一个），再保存issue后会自动创建博客内容，片刻后可通过<a href="https://xxx.github.io/">https://XXX.github.io</a> 访问（可进入Actions页面查看构建进度）。</p>
+</li>
+<li>
+<p>【手动全局生成】这个步骤只有在修改<code>config.json</code> 文件或者出现奇怪问题的时候，需要执行。</p>
+</li>
+</ol>
+<pre><code class="language-p4">通过Actions-&gt;build Gmeek-&gt;Run workflow-&gt;里面的按钮全局重新生成一次
+</code></pre>
+<p>Note</p>
+<p>网友制作的视频教程：<a href="https://www.bilibili.com/video/BV1GM4m1m7ZD/">https://www.bilibili.com/video/BV1GM4m1m7ZD/</a></p>
+<h2>二、配置文件</h2>
+<p>Tip</p>
+<p>按照安装步骤成功搭建好后，就可以阅读下面的内容修改配置文件啦。<br />
+注意修改配置文件后一定要手动全局生成一次，不然会报错。<br />
+如果对<code>json</code>格式不熟悉，建议先简单学习一下。</p>
+<p><code>config.json</code> 文件就是配置文件，在创建的仓库内可以找到，对应修改为自己的即可。</p>
+<pre><code class="language-js">{
+    &quot;title&quot;:&quot;Meekdai&quot;,
+    &quot;subTitle&quot;:&quot;童话是一种生活态度，仅此而已。&quot;,
+    &quot;avatarUrl&quot;:&quot;https://github.githubassets.com/favicons/favicon.svg&quot;,
+    &quot;GMEEK_VERSION&quot;:&quot;last&quot;
+}
+</code></pre>
+<p>以上是必须的字段，下面是可以自定义字段的描述，可以选择加入到<code>config.json</code>中。</p>
+<pre><code class="language-js">&quot;displayTitle&quot;:&quot;Meekdai&quot;,
+&quot;homeUrl&quot;:&quot;http://blog.meekdai.com&quot;,
+&quot;faviconUrl&quot;:&quot;https://github.githubassets.com/favicons/favicon.svg&quot;,
+&quot;email&quot;:&quot;meekdai@163.com&quot;,
+&quot;startSite&quot;:&quot;02/16/2015&quot;,
+&quot;filingNum&quot;:&quot;浙ICP备20023628号&quot;,
+&quot;onePageListNum&quot;:15,
+&quot;singlePage&quot;:[&quot;about&quot;],
+&quot;iconList&quot;:{&quot;music&quot;:&quot;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z&quot;},
+&quot;exlink&quot;:{&quot;music&quot;:&quot;https://music.meekdai.com&quot;},
+&quot;commentLabelColor&quot;:&quot;#006b75&quot;,
+&quot;yearColorList&quot;:[&quot;#bc4c00&quot;, &quot;#0969da&quot;, &quot;#1f883d&quot;, &quot;#A333D0&quot;],
+&quot;i18n&quot;:&quot;CN&quot;,
+&quot;UTC&quot;:8,
+&quot;themeMode&quot;:&quot;manual&quot;,
+&quot;dayTheme&quot;:&quot;light&quot;,
+&quot;nightTheme&quot;:&quot;dark_colorblind&quot;,
+&quot;urlMode&quot;:&quot;pinyin&quot;,
+&quot;style&quot;:&quot;&quot;,
+&quot;script&quot;:&quot;&quot;,
+&quot;head&quot;:&quot;&quot;,
+&quot;allHead&quot;:&quot;&quot;,
+&quot;indexStyle&quot;:&quot;&quot;,
+&quot;indexScript&quot;:&quot;&quot;,
+&quot;showPostSource&quot;:1,
+&quot;rssSplit&quot;:&quot;sentence&quot;,
+&quot;bottomText&quot;:&quot;转载请注明出处&quot;,
+&quot;ogImage&quot;:&quot;https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg&quot;,
+&quot;primerCSS&quot;:&quot;&lt;link href=&#x27;https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css&#x27; rel=&#x27;stylesheet&#x27; /&gt;&quot;,
+&quot;needComment&quot;:0,
+</code></pre>
+<p>Caution</p>
+<p>最后一行配置末尾不需要逗号，其他行末尾都需要逗号（英文逗号）</p>
+<table>
+<thead>
+<tr>
+<th><strong>配置参数</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>【必填】博客标题</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>【必填】博客描述&amp;自述</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>【必填】博客头像</td>
+</tr>
+<tr>
+<td>GMEEK_VERSION</td>
+<td>【必填】Gmeek版本，一般写<code>last</code>也可以用具体tag版本</td>
+</tr>
+<tr>
+<td>displayTitle</td>
+<td>用于头像后面的标题展示，如果和<code>title</code>一致则不用添加</td>
+</tr>
+<tr>
+<td>homeUrl</td>
+<td>博客的主页地址，自定义域名时需要配置</td>
+</tr>
+<tr>
+<td>faviconUrl</td>
+<td>页面的favicon地址，如果和avatarUrl一致则不用添加</td>
+</tr>
+<tr>
+<td>email</td>
+<td>用于自动提交仓库时用，不添加也可以</td>
+</tr>
+<tr>
+<td>startSite</td>
+<td>用于页面底部显示网站运行天数</td>
+</tr>
+<tr>
+<td>filingNum</td>
+<td>用于页面底部显示备案信息</td>
+</tr>
+<tr>
+<td>onePageListNum</td>
+<td>用于首页每页展示的文章数量</td>
+</tr>
+<tr>
+<td>singlePage</td>
+<td>自定义独立页面，例如<code>about</code>或者<code>link</code>等</td>
+</tr>
+<tr>
+<td>iconList</td>
+<td>用于定义singlePage按钮展示的<a href="https://primer.style/foundations/icons/#16px">SVG图标</a> (16px)，<code>about</code>和<code>link</code>内置无需定义</td>
+</tr>
+<tr>
+<td>exlink</td>
+<td>用于自定义首页右上角圆形按钮到外部链接功能，按钮图标定义在iconList中</td>
+</tr>
+<tr>
+<td>commentLabelColor</td>
+<td>用于自定义显示评论数量标签的颜色</td>
+</tr>
+<tr>
+<td>yearColorList</td>
+<td>用于自定义显示不同年份标签的颜色</td>
+</tr>
+<tr>
+<td>i18n</td>
+<td>用于定义博客语言，目前支持<code>EN</code>/<code>CN</code>/<code>RU</code></td>
+</tr>
+<tr>
+<td>UTC</td>
+<td>用于定义<a href="https://en.wikipedia.org/wiki/List_of_UTC_offsets">时区</a></td>
+</tr>
+<tr>
+<td>themeMode</td>
+<td>用于定义主题模式，默认为<code>manual</code>，也可选择<code>fix</code><a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-liang-an-zhu-ti-pei-zhi-fang-shi.html">详细说明</a></td>
+</tr>
+<tr>
+<td>dayTheme</td>
+<td>用于定义<a href="https://github.com/settings/appearance">亮主题</a></td>
+</tr>
+<tr>
+<td>nightTheme</td>
+<td>用于定义<a href="https://github.com/settings/appearance">暗主题</a></td>
+</tr>
+<tr>
+<td>urlMode</td>
+<td>用于定义文章链接生成模式，目前支持<code>pinyin</code>/<code>issue</code>/<code>ru_translit</code></td>
+</tr>
+<tr>
+<td>style</td>
+<td>用于自定义文章页CSS</td>
+</tr>
+<tr>
+<td>script</td>
+<td>用于自定义文章页JavaScript</td>
+</tr>
+<tr>
+<td>head</td>
+<td>用于自定义文章页head内容</td>
+</tr>
+<tr>
+<td>allHead</td>
+<td>用于自定义所有页面head内容</td>
+</tr>
+<tr>
+<td>indexStyle</td>
+<td>用于自定义首页CSS</td>
+</tr>
+<tr>
+<td>indexScript</td>
+<td>用于自定义首页JavaScript</td>
+</tr>
+<tr>
+<td>showPostSource</td>
+<td>设置为1则在文章页显示issue链接按钮，设置为0则不显示</td>
+</tr>
+<tr>
+<td>rssSplit</td>
+<td>设置RSS输出的截断符号，默认<code>sentence</code>为第一句话，可配置其他特殊符号</td>
+</tr>
+<tr>
+<td>bottomText</td>
+<td>用于设置文章页面右下角显示的内容</td>
+</tr>
+<tr>
+<td>ogImage</td>
+<td>用于设置Open Graph协议展示的图片</td>
+</tr>
+<tr>
+<td>primerCSS</td>
+<td>用于设置primer.css的CDN地址，默认使用<a href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css">南科大</a></td>
+</tr>
+<tr>
+<td>needComment</td>
+<td>用于设置是否需要评论功能，1开启评论，0关闭</td>
+</tr>
+</tbody></table><h2>三、常见问题</h2>
+<h3>1. 搭建不成功</h3>
+<p>多半是没有按照安装步骤来，其实搭建就这2步，不要自己乱点乱设置，就不会有问题。</p>
+<ul>
+<li>案例一：<a href="https://github.com/Meekdai/Gmeek/issues/14">Meekdai/Gmeek#14</a></li>
+<li>案例二：<a href="https://github.com/Meekdai/Gmeek/issues/18">Meekdai/Gmeek#18</a></li>
+<li>案例二：<a href="https://github.com/Meekdai/Gmeek/issues/20">Meekdai/Gmeek#20</a></li>
+</ul>
+<h3>2. Actions执行失败</h3>
+<p>修改了<code>config.json</code>配置文件后，需要全局生成。另外<code>label</code>标签没有打会出现这个问题。<br />
+建议通过Actions-&gt;build Gmeek-&gt;Run workflow-&gt;里面的按钮全局重新生成一次</p>
+<ul>
+<li>案例一：<a href="https://github.com/Meekdai/Gmeek/issues/1">Meekdai/Gmeek#1</a></li>
+<li>案例二：<a href="https://github.com/Meekdai/Gmeek/issues/10">Meekdai/Gmeek#10</a></li>
+</ul>
+<h3>3. 导入以前的文章</h3>
+<p>如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下<a href="https://tool.lu/timestamp">网站</a>转换。</p>
+<pre><code class="language-html">&lt;!-- ##{&quot;timestamp&quot;:1490764800}## --&gt;
+</code></pre>
+<h3>4. 自定义单篇文章参数</h3>
+<p>自定义单篇文章页面的<code>style</code>和<code>script</code></p>
+<pre><code class="language-html">&lt;!-- ##{&quot;style&quot;:&quot;&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;&quot;}## --&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!-- ##{&quot;script&quot;:&quot;&lt;script async src=&#x27;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#x27;&gt;&lt;/script&gt;&quot;}## --&gt;
+</code></pre>
+<h3>5. 多种自定义参数</h3>
+<p>可同时一起添加多种自定义参数：</p>
+<pre><code class="language-html">&lt;!-- ##{&quot;script&quot;:&quot;&lt;script async src=&#x27;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#x27;&gt;&lt;/script&gt;&quot;,&quot;style&quot;:&quot;&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;&quot;,&quot;timestamp&quot;:1490764800}## --&gt;
+</code></pre>
+<h3>6. 自定义全局文章参数</h3>
+<p>添加全局文章页面的<code>style</code>和<code>script</code>，在<code>config.json</code>文件中添加</p>
+<pre><code class="language-js">&quot;style&quot;:&quot;&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;&quot;,
+&quot;script&quot;:&quot;&lt;script async src=&#x27;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#x27;&gt;&lt;/script&gt;&quot;,
+</code></pre>
+<h3>7. 置顶博客文章</h3>
+<p>只需要<code>Pin issue</code>后，手动全局生成一次即可。</p>
+<h3>8. utteranc报错</h3>
+<p>如果在评论里面登录后评论报错，可直接按照提示安装<code>utteranc app</code>即可</p>
+<pre><code>Error: utterances is not installed on xxx/xxx.github.io. If you own this repo, install the app. Read more about this change in the PR.
+
+</code></pre>
+<h3>9. 删除文章</h3>
+<p>只需要<code>Close issue</code>或者<code>Delete issue</code>后，再手动全局生成一次即可。</p>
+<h2>四、进阶教程</h2>
+<p>Gmeek的可定制化功能非常高，下面的链接是一些更加高级的设置教程，还有插件的使用等。<br />
+<a href="https://meekdai.github.io/tag.html#Gmeek">https://meekdai.github.io/tag.html#Gmeek</a></p>
+]]></content><link href="https://github.com/692/692/issues/6"/><category term="博客"/><published>2024-10-13T11:30:10+00:00</published></entry><entry><id>https://github.com/692/692/issues/4</id><title>测试标题</title><updated>2024-10-13T11:30:39.024019+00:00</updated><content type="html"><![CDATA[<p>测试内容内容内容测试内容测试内容测试内容测试内容<img src="https://github.com/user-attachments/assets/010dcd96-58f6-46cc-9322-e81bfc2dfe5a" alt="Screenshot_20240925_192332_org_schabi_newpipe_MainActivity.jpg" /></p>
+]]></content><link href="https://github.com/692/692/issues/4"/><category term="IGNORE"/><published>2024-10-13T04:17:56+00:00</published></entry><entry><id>https://github.com/692/692/issues/3</id><title>图片测试</title><updated>2024-10-13T11:30:39.141695+00:00</updated><content type="html"><![CDATA[<p>图</p>
 <p><img src="https://github.com/user-attachments/assets/8c5c1964-4865-40f4-8fdb-b7568416960a" alt="4K_2023_오토살롱위크___레이싱모델__유민___(Racing_Model)Auto_Salon_Week_모터쇼_Moter_Show(_2023.9.8)_1-24_screenshot.jpg" /></p>
 <p><img src="https://github.com/user-attachments/assets/04e3fad3-d3f4-4fad-8c2b-e4f65cfbe363" alt="4K_2023_오토살롱위크___레이싱모델__유민___(Racing_Model)Auto_Salon_Week_모터쇼_Moter_Show(_2023.9.8)_0-59_screenshot.jpg" /></p>
 <p><img src="https://github.com/user-attachments/assets/e44c6b0b-3d7d-4335-a347-34df338e46da" alt="4K_레이싱모델_김유민_오토살롱위크_킨텍스_포즈_slender_asian_model_Look_Book_pose_cam3_0-3_screenshot.jpg" /></p>
 <p><img src="https://github.com/user-attachments/assets/1ef9e060-75af-4733-86e7-1f63ad6fbec1" alt="모델_김유민_2023_오토살롱위크_직캠_#2_Model_Kim_Yumin_2023_Auto_Salon_Week_Fancam_핫팬츠_2023.09.08_0-27_screenshot.jpg" /></p>
 <p><img src="https://github.com/user-attachments/assets/2dea0dcd-8fc5-4a5f-9337-cb542dd3ec93" alt="(_ⓛωⓛ__)김유민,Kim_YuMin💓빨간_윈피스_그리고_레이싱모델_김유민.💓_1-19_screenshot.jpg" /></p>
 <p><img src="https://github.com/user-attachments/assets/8b97754d-8c11-4c9c-a064-6e9cff8cdc16" alt="모델_김유민_2023_오토살롱위크_직캠_#2_Model_Kim_Yumin_2023_Auto_Salon_Week_Fancam_핫팬츠_2023.09.08_3-10_screenshot.jpg" /></p>
-]]></content><link href="https://github.com/692/692/issues/3"/><category term="TOP"/><published>2024-10-12T19:22:27+00:00</published></entry><entry><id>https://github.com/692/692/issues/2</id><title>About</title><updated>2024-10-13T09:40:18.174065+00:00</updated><content type="html"><![CDATA[<p>这是我的个人博客，基于GitHub issues发布文章的项目。</p>
-]]></content><link href="https://github.com/692/692/issues/2"/><category term="About"/><published>2024-10-12T18:41:41+00:00</published></entry><entry><id>https://github.com/692/692/issues/1</id><title>这个博客开源了</title><updated>2024-10-13T09:40:18.306445+00:00</updated><content type="html"><![CDATA[<h1><a href="https://github.com/yihong0618/gitblog/issues/177">这个博客开源了</a></h1>
+]]></content><link href="https://github.com/692/692/issues/3"/><category term="TOP"/><published>2024-10-12T19:22:27+00:00</published></entry><entry><id>https://github.com/692/692/issues/2</id><title>About</title><updated>2024-10-13T11:30:39.265395+00:00</updated><content type="html"><![CDATA[<p>这是我的个人博客，基于GitHub issues发布文章的项目。</p>
+]]></content><link href="https://github.com/692/692/issues/2"/><category term="About"/><published>2024-10-12T18:41:41+00:00</published></entry><entry><id>https://github.com/692/692/issues/1</id><title>这个博客开源了</title><updated>2024-10-13T11:30:39.388770+00:00</updated><content type="html"><![CDATA[<h1><a href="https://github.com/yihong0618/gitblog/issues/177">这个博客开源了</a></h1>
 <p>因为一篇去年非常触动我的文章--<a href="https://laike9m.com/blog/people-die-but-long-live-github,122/">People Die, but Long Live GitHub</a>
 我决定不再用纸笔写日记，进而全部转到 GitHub 上。如果你看到这个，这个其实不是那些大牛的技术博客，而是单纯的碎碎念偶尔认真的记录自己而已。</p>
 <hr />
