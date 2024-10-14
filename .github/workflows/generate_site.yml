@@ -31,8 +31,8 @@ jobs:
       GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       ISITE_VERSION: v0.1.3
       ZOLA_VERSION: v0.19.2
-      USER: ${{ github.repository_owner }}
-      REPO: ${{ github.event.repository.name }}
+      USER: ${{ github.692 }}
+      REPO: ${{ github.event.692 }}
       BASE_URL: https://692.github.io/692 # change to your own domain
       # Change to below if you are using GitHub Pages
       # BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
